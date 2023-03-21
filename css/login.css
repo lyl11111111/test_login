@@ -1,0 +1,129 @@
+@charset "utf-8"; 
+/*编码声明*/
+
+/*初始化所有标签元素
+  盒模型的内边距置0
+  外边距上下置0并用auto来居中
+  默认字体大小为12px
+  默认字体颜色为：灰色,333比555更灰
+  *代表HTML页面的所有元素
+  */
+*{padding:0; margin:0 auto; font-size:12px; color:#333;}
+/*无序列表标签，设置不显示前导符号*/
+ul,li{list-style:none;}
+/*图片，设置不显示边框（兼容性考虑）*/
+img{border:none;}
+/*超链接字体颜色设置于灰色，去掉默认的下划线 */
+a{color:#333; text-decoration:none;}
+/*超连接鼠标悬停，颜色变化，并显示下划线*/
+a:hover{color:#1c9bfa; text-decoration:underline;}
+/*左右浮动、样式清除原子类*/
+.floatL{float:left;}
+.floatR{float:right;}
+.clear{clear:none;}
+
+/*登录2*/
+/*.bgSign{background:#fff url(../images/bg_sign_body.png) repeat-x top left;}*/
+/*大背景图片居中对齐,设置元素的最小高度为560，图片溢出不出现滚动条*/
+.bgLogin{background:#f4f4f4 url(../images/bg_login.jpg) no-repeat top center;}
+/*div盒子*/
+.login{
+	padding-top:62px;
+	width:1000px;
+	overflow:hidden;
+}
+/*logo盒子*/
+.login .logo{
+	height:39px;
+	margin-bottom:16px;
+	background:url(../images/logo01.png) no-repeat center left;
+	overflow:hidden;
+}
+/*登录表单-无序列表*/
+.login .cont{
+	width:256px;
+	height:280px;
+	padding:84px 35px 5px;
+	background:url(../images/bg_login_form.png) no-repeat top left;
+	margin:0px 0 0 auto;
+	overflow:hidden;
+}
+/*无序列表-项*/
+.login .cont li{
+	height:44px;
+	padding-left:42px;
+	margin-bottom:3px;
+	background:url(../images/bg_login_inputL.png) no-repeat;
+	overflow:hidden;
+}
+/*输入框的背景图片*/
+.login .cont li span{
+	display:block;
+	float:left;
+	height:28px;
+	padding:8px 8px 8px 0;
+	background:url(../images/bg_login_inputR.png) no-repeat top right;
+	overflow:hidden;
+}
+/*输入文本框的样式*/
+.login .cont li input.ext{
+	width:205px;
+	height:28px;
+	line-height:28px;
+	background:none;
+	border:none;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	font-family:"微软雅黑";
+	color:#333;
+	overflow:hidden;
+}
+/*登录按钮样式*/
+.login .cont li input.btn{
+	width:248px;
+	height:36px;
+	border:none;
+	cursor:pointer;
+	background:url(../images/btn_sign.gif) no-repeat top left;
+	overflow:hidden;
+}
+
+
+/*采用CSS精灵，显示输入框前面的图标*/
+.login .cont li.l1{background-position:0 0px;}
+.login .cont li.l2{background-position:0 -44px;}
+.login .cont li.l3{background-position:0 -88px;}
+.login .cont li.l4{background-position:0 -132px;}/*验证码*/
+
+/*验证码输入框宽度小一点*/
+.login .cont li.l4 input.ext{width:150px;
+overflow: hidden;}
+.login .cont li.l4 button{
+    height: 28px;
+    width: 55px;
+    line-height:28px;
+	background:none;
+	border:none;
+	float:left;
+	font-size:20px;
+	font-weight:bold;
+	font-family:"微软雅黑";
+	color:#333;
+	overflow:hidden;
+}
+.login .cont li.l5{
+	background:none;
+	text-align:center;
+	padding:6px 0;
+	height:36px;
+}
+/*忘记密码项*/
+.login .cont li.l6{	
+	background:none;
+	padding:0 8px;
+	color:#b2bbfa;
+}
+.login .cont li.l6 a{
+	color:#b2bbfa;
+}

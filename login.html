@@ -1,0 +1,52 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
+    <title>登录2</title>
+</head>
+<body class="bgLogin">
+    <div class="login">
+        <div class="logo"></div>
+        <form action="" method="post">
+            <ul class="cont">
+                <li class="l1">
+					<span>
+						<input name="" type="text" class="ext" />
+					</span>
+				</li>
+                <li class="l2">
+					<span>
+						<input name="" type="password" class="ext" />
+					</span>
+				</li>
+                <li class="l4">
+					<span>
+						<input name="" type="text" class="ext" />
+						<button onclick="getYzm();return false" name="btnName" id="yzmbtn" class="b1"></button>
+					</span>
+				</li>
+                <li class="l5">
+					<input name="" type="" class="btn" value=" " />
+				</li>
+                <li class="l6">
+					<a href="#">忘记密码</a>
+				</li>
+            </ul>
+        </form>
+    </div>
+	<script>
+		window.onload=getYzm()
+		function getYzm(){
+			var str='';
+			lis=['a','b','c','d','e','f','g','1','2','3','4','5','6','7','8','9','0']
+			for(var i=1;i<=4;i++ ){
+				var str2 = lis[Math.floor(Math.random() * lis.length)]
+				str = str+str2
+			}
+			document.getElementById("yzmbtn").innerHTML=str
+		}
+	</script>
+</body>
+</html>
